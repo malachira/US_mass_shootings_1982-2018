@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>US Mass shootings</title>
+
+  <!-- Boostrap Stylesheet -->
+  <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}" media="screen">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}" media="screen">
+
+  <!-- Our CSS -->
+  <style>
+    #logo{background-color:#333;
+    font: none;}
+    .navbar-custom {
+      background-color: #333;
+  }
+  .description-header{
+    color:black
+  }
+    </style>
+</head>
+
+<body>
+    <!-- Start of navbar -->
+    <nav id ="mainheader" class="navbar navbar-default">
+        <div class="container-fluid navbar-custom">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="row">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle Navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <!-- <div class="col-xs-9 phone-nav"> -->
+                  <a class="navbar-brand" href="/" id="logo">US Mass shootings 1982-2018</a>
+                <!-- </div> -->
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right navbar-right-custom">
+                      <li><a target="_blank" href="/about">About</a></li>
+                      <li><a target="_blank" href="/plots">Plots</a></li>
+                      <li><a target="_blank" href="/choropleth">Severity of Gun Laws</a></li>
+                      <li><a target="_blank" href="/states">State Gun Laws</a></li>
+                  </ul>
+              </div>
+            </div><!-- /.navbar-collapse -->
+          </div>
+        </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+    </nav>
+      <!-- End of navbar -->
+    <!-- Start of container -->
+    <div class="container">
+        <section class="row">
+          <div class="col-md-12">
+            <article class="description-content">
+              <h1 class="description-header">Source</h1>
+              <hr class="description-hr"/>
+              <p>In the aftermath of the movie theater massacre in Aurora, Colorado, Mother Jones created the first open-source database documenting mass shootings in the United States. Their research focused on indiscriminate rampages in public places resulting in four or more victims killed by the attacker. Shootings stemming from more conventional crimes such as armed robbery or gang violence were excluded.</p>
+              <p>In January 2013, a mandate for federal investigation of mass shootings authorized by President Barack Obama lowered that baseline to three or more victims killed. Accordingly, Mother Jones original analysis, which covered cases with four or more victims killed from 1982-2012 was updated to include attacks dating from January 2013 in which three or more victims died.</p>
+              <a href="https://www.motherjones.com/politics/2012/07/mass-shootings-map/" target="_blank">Mother Jones: A Guide to Mass Shootings in America</a>
+            </article>
+          </div>
+          <div class="col-md-12">
+              <article class="description-content">
+                <h1 class="description-header">Team</h1>
+                <hr class="description-hr"/>
+                <p>Bopanna Malachira</p>
+                <p>James Briley</p>
+                <p>Jason Lin</p>
+                <p>Subhashini Chodavarpu</p>                                
+          </div>
+        </section>
+      </div>
+      <!-- End of container -->
+      <!-- End of container -->
+  
+
+        <!-- End of container -->
+
+    <!-- Bootstrap CDN -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+
+</body>
+</html>
